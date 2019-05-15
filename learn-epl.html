@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> xel Docs | Learn ePL</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This tutorial is designed for software programmers with a need to understand the ePL programming language starting from scratch.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:site_name" content="xel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="xel Docs | Learn ePL">
+    <meta property="og:description" content="This tutorial is designed for software programmers with a need to understand the ePL programming language starting from scratch.">
+    <meta property="og:url" content="https://docs.xel.org/learn-epl.html">
+    <meta property="og:image" content="https://docs.xel.org/assets/images/facebook.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="xel Docs | Learn ePL">
+    <meta name="twitter:description" content="This tutorial is designed for software programmers with a need to understand the ePL programming language starting from scratch.">
+    <meta name="twitter:url" content="https://docs.xel.org/learn-epl.html">
+    <meta name="twitter:image" content="https://docs.xel.org/assets/images/twitter.png">
+
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+
+  </head>
+
+  <body id="doc-body">
+    <script type="text/javascript" src="dependencies/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="dependencies/clipboard/clipboard.min.js"></script>
+    <script type="text/javascript" src="dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/docs.js"></script>
+    <script type="text/javascript" src="dependencies/prismjs/prism.js"></script>
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="dependencies/prismjs/prism.css">
+    <link rel="stylesheet" href="assets/css/xeldocs.style.css" data-autorefresh="true">
+
+
+
+    <div class="epl-page">
+      <div class="docspage">
+        <div class="navbar1 nav-desktop content-container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="nav_black_logo" src="assets/images/xel_black.svg" alt="Xel logo">
+              <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+              <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars open-toggle"></span>
+              <span class="fas fa-times close-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <div class="nav-container">
+                  <div class="navlinks" id="navfordocs">
+                    <li class="nav-item">
+                      <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://xel.org/">xel homepage</a>
+                    </li>
+                  </div>
+                  <div class="dropdown-mobile navsocials">
+                    <div class="line"></div>
+                    <div class="socials-mobile">
+                      <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                        <img src="assets/images/discord.svg" alt="">
+                      </a>
+                      <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                        <img src="assets/images/reddit.svg" alt="">
+                      </a>
+                      <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                        <img src="assets/images/twitter.svg" alt="">
+                      </a>
+                      <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                        <img src="assets/images/btc.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="navbar1 nav-mobile content-container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="nav_black_logo" src="assets/images/xel_white.svg" alt="Xel logo">
+              <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+              <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars open-toggle"></span>
+              <span class="fas fa-times close-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <div class="nav-container">
+                  <div class="navlinks" id="navfordocs">
+                    <li class="nav-item">
+                      <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://xel.org/">xel homepage</a>
+                    </li>
+                  </div>
+                  <div class="dropdown-mobile navsocials">
+                    <div class="line"></div>
+                    <div class="socials-mobile">
+                      <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                        <img src="assets/images/discord.svg" alt="">
+                      </a>
+                      <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                        <img src="assets/images/reddit.svg" alt="">
+                      </a>
+                      <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                        <img src="assets/images/twitter.svg" alt="">
+                      </a>
+                      <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                        <img src="assets/images/btc.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="sidebardocs content-container" id="timeline">
+
+            <ul class="timeline-desktop" role="tablist">
+              <li>
+                <a id="tm1" class="tm1 show" href="#">1. Overview</a>
+              </li>
+              <li>
+                <a id="tm2" class="tm2" href="#">2. ePL Programming</a>
+              </li>
+              <li>
+                <a id="tm3" class="tm3" href="#">3. ePL Submitting Tasks</a>
+              </li>
+              <li>
+                <a id="tm4" class="tm4" href="#">4. ePL Advanced Tactics</a>
+              </li>
+              <li>
+                <a id="tm5" class="tm5" href="#">5. Support</a>
+              </li>
+            </ul>
+            <div class="sdbr-mobile content-container">
+              <ul class="timeline-mobile" id="timeline">
+                <li class="tm1 show" id="tm1">
+                  <a href="#">1</a>
+                </li>
+                <li class="tm2" id="tm2">
+                  <a href="#">2</a>
+                </li>
+                <li class="tm3" id="tm3">
+                  <a href="#">3</a>
+                </li>
+                <li class="tm4" id="tm4">
+                  <a href="#">4</a>
+                </li>
+                <li class="tm5" id="tm5">
+                  <a href="#">5</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div id="docs" class="docs-content">
+
+            <div class="document" id="doc1">
+              <div class="doc-title">1. Overview</div>
+              <p class="doc-text">This tutorial is designed for software programmers with a need to understand the ePL programming language starting from scratch. You will gain enough knowledge from where you can take yourself to a higher level of expertise.</p>
+              <p class="doc-text">But before we get too deep into the little details, let us start with a simple example. </p>
+
+            </div>
+            <div class="document" id="doc2">
+              <div class="doc-title">2. ePL Programming</div>
+              <p class="doc-text">ePL is a programming language which was specifically designed for coding algorithms to be executed on the XEL computation node network.</p>
+              <p class="doc-text">Its syntax is very similar to the C programming languages. However, since nodes on the XEL network download and execute code from potentially dangerous sources, a few adaptations were necessary to ensure that code written in ePL can cause no harm to the system it is executed on.</p>
+              <p class="doc-text">Furthermore, since task distribution and verification is done in a decentralized fashion (all nodes which meet a minimum system requirement in terms or memory and CPU power must be able to verify the algorithms&#x2019; results in a similar amount of time) it is designed to run in a resource-limited VM. Furthermore, ePL has a slightly modified memory management (and instruction set) which ensures that every node can assess how much memory the program will consume and when it will terminate prior to execution. This avoids unpredictable behavior such as out of memory errors and the halting problem.</p>
+
+              <div class="installation-section">
+                <h2 class="title">Requirements</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title"></h3>
+
+                    <p class="text">If you want to set up your environment for programming in ePL, you need to install <a class="p-link" href="xelinewallet.html">XELINE Wallet</a> and <a class="p-link" href="miner.html">XEL Miner</a> in your computer.</p>
+
+                  </article>
+                </div>
+
+              </div>
+              <div class="installation-section">
+                <h2 class="title">A simple example - Finding prime numbers</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Writing the code</h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">The example we&#x2019;ll be looking at is a simple ePL program which is meant to find prime numbers between 10000 &#x2013; 20000. While it has no real relevance for the real world, it certainly is small enough to help understand how the ePL really works. First of all, let us take a look at the entire code before we start breaking down each line of it: </p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <pre class="text-code">    <code class="clike">
+        
+array_uint 1000;
+
+function main {
+    verify();
+}
+
+function primetest {
+    u[1] = 0;
+    if (u[2] &lt;= 1)  u[1]=0;
+    else if (u[2] &lt;= 3) u[1]=0;
+    else if (u[2]%2 == 0 || u[2]%3 == 0) u[1]=0;
+    else {
+        u[3]=5;
+        u[1]=1;
+        repeat(u[99],20000,20000){
+        if (u[2]%u[3] == 0 || u[2]%(u[3]+2) == 0)
+        { u[1]=0; break; }
+        if(u[3]*u[3] &gt; u[2]) break;
+            u[3]+=6;
+        }
+    }
+}
+
+function verify {
+
+    // make prime test
+    u[2] = m[0];
+    u[1]=0;
+    if(m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) primetest();
+    verify_bty ((m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) &amp;&amp; (u[1]==1));
+
+    // some randomness for POW function
+    u[57] = m[1];
+    u[56] = m[2];
+    u[55] = m[3];
+    u[54] = m[4];
+
+    verify_pow (u[57], u[56], u[55], u[54]);
+}
+                                    
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                  </article>
+                </div>
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title"></h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">An ePL program usually starts with memory allocations which basically describe how the following six arrays are being allocated:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>int i[] : signed ints (32 bit)</p>
+                          <p>int u[] : unsigned ints (32 bit)</p>
+                          <p>int l[] : signed longs (64 bit)</p>
+                          <p>int ul[] : unsigned longs (64 bit)</p>
+                          <p>int d[] : doubles</p>
+                          <p>int f[] : floats</p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <div class="installation-paragraph">
+                      <p class="text">Your ePL program should have these 6 array initialisers at the beginning, each one telling the VM how many elements it should allocate in which array. In this example it is:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>array_int 0;</p>
+                          <p>array_uint 1000;</p>
+                          <p>array_long 0;</p>
+                          <p>array_ulong 0;</p>
+                          <p>array_double 0;</p>
+                          <p>array_float 0;</p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <div class="installation-paragraph">
+                      <p class="text">Lines, that allocate 0 elements to an array can be left out &#x2013; this has been done in our example above. The arrays themselves do not need (and must not be) allocated by the programmer. The command array_int 1000; will already make sure that I[] is created with 1000 elements in it (indices 0 &#x2013; 999). Please keep in mind, that there is no such concept as variable scopes, all arrays are global. Later, you will learn that this does not necessarily make it harder to code in ePL &#x2013; just be a little patient . </p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <div class="installation-paragraph">
+                      <p class="text">In the next part, the body of your ePL program, you can define multiple functions. Functions have the following syntax:</p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <pre class="text-code"><code class="clike">
+function name {
+    ...
+}
+                                        </code></pre>
+                    <p class="text">Functions neither have arguments nor return values. This is not a big issue though since arguments and return values can be mimicked by simply using the global arrays. Again, later on, you will see how you still can easily and comfortably code in the way you are used to right now.</p>
+                    <p class="text">In our example we have defined three functions: <span class="p-link">main</span>, <span class="p-link">verify</span> and <span class="p-link">test_prime</span>. While you can define as many functions are you like (as long as you stay within the maximum allowed complexity and size allowed for your program), you must have the <span class="p-link">main</span> and the <span class="p-link">verify</span> function.</p>
+                    <p class="text">The functions main and verify are needed both because ePL allows for an asymmetric calculation verification. To understand this a bit better, it is crucial to understand how working nodes are searching for solutions and how the rest of the network verifies these result to make sure that a scientist, who purchases computational power on XEL, actually gets what he has paid for: a correct result. Workers, those nodes who are searching for solutions to other tasks, are executing the main function whereas the verification of a solution to the algorithm is done by executing <span class="p-link">verify()</span>.</p>
+                    <p class="text">This has a very good reason: XEL allows you more complex programs with a fairly longer execution time inside the main function that it does for the verification routine to ensure an easy and light weight verification on the nodes without stalling the network for too long. A good example where this asymmetrical verification could come in handy is an SAT solver. The main() function would carry a complex SAT solving logic, which is more expensive to execute, whereas the verification routine would just assign the result to the boolean formula and check if it evaluates to true. If you want to see an example of how this can be done, feel free to take a look at our SAT solving demo.</p>
+                    <p><strong>Important warning: It is the developers responsibility to code the logic in main and verify correctly. Especially, it is important to make sure that the logic (in particular, the verify_bty logic which we will read more about later on) in verify actually evaluates to true whenever the one in main evaluates to true. An incorrect implementation by the developer might cause results to be accepted, that does not really reflect your desired outcome. Or even more importantly, it can cause that valid results found in main are rejected by the Blockchain because they do not pass verify. Surely, this sounds still very abstract to you, but it will make more sense as we dig deeper into this tutorial.</strong></p>
+                    <p class="text">Anyway, for now, things are very easy: in our particular case, there is no possibility to do an asymmetrical verification as finding primes is as complex as verifying them. To keep the code clean, we therefore add the entire logic into <span class="p-link">verify</span>, and let the <span class="p-link">main</span> function just call <span class="p-link">verify():</span></p>
+                    <pre class="text-code"><code class="clike">
+function main {
+    verify();
+}
+                                        </code></pre>
+                    <p class="text">On we go. Let&#x2019;s start taking a look at the <span class="p-link">verify</span> function first:</p>
+
+                    <pre class="text-code">    <code class="clike">
+          
+function verify {
+    // make prime test
+    u[2] = m[0];
+    u[1]=0;
+    if(m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) primetest();
+    verify_bty ((m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) &amp;&amp; (u[1]==1));
+
+    // some randomness for POW function
+    u[57] = m[1];
+    u[56] = m[2];
+    u[55] = m[3];
+    u[54] = m[4];
+
+    verify_pow (u[57], u[56], u[55], u[54]);
+}
+                                        
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+                    <p class="text">Before you can understand what is going on here, it is essential that you understand how randomness is introduced into the execution of your code. ePL has one more array, the so-called <span class="p-link">uint m[12];</span> array &#x2013; an array which consists of 12 unsigned integers. The first 10 unsigned integers are pseudorandom and provide you with 320 bits of entropy in total. <span class="p-link">m[10]</span>, the 11th unsigned integer, contains the round number and <span class="p-link">m[11]</span>, the 12th unsigned integer, contains the iteration that we are currently in. The concept of iterations will be explained at a later point in time.</p>
+                    <p class="text">To better understand what is going on here, please take a look at the internal C logic that fills this <span class="p-link">uint m[12];</span> array:</p>
+
+                    <pre class="text-code">    <code class="clike">
+        
+// hash32[] is a random hash value which is provided by the XEL protocol
+// mult32[] contains a whole bunch of other information such as round and iteration #
+
+// Randomize Inputs m[0]-m[9]
+for (i = 0; i &lt; 10; i++) { work-&gt;vm_input[i] = swap32(hash32[i % 4]);
+    if (i &gt; 4)
+    work-&gt;vm_input[i] = work-&gt; vm_input[i] ^ work-&gt;vm_input[i - 3];
+}
+
+// Set m[10] To Round Number
+work-&gt;vm_input[10] = mult32[1];
+
+// Set Inputs m[11] To Iteration Number
+work-&gt;vm_input[11] = mult32[2];
+                                        
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                    <p class="text">In our particular example, we will use the first integer <span class="p-link">m[0]</span> to pick our prime candidate. Of course, you can use the entire 320 bit to create potential solution candidates to your algorithm. If you need more than 320 bit, you can even derive an infinite pseudorandom number stream from it:</p>
+                    <pre class="text-code"><code class="clike">
+u[2] = m[0];
+u[1]=0;
+                                        </code></pre>
+
+                    <p class="text">In this part, we basically take over the first random value in <span class="p-link">m[0]</span> and store it in one of our unsigned int array slots <span class="p-link">u[0]</span> &#x2013; remember, we have defined 1000 of them at the top of our program. Additionally, we initialize <span class="p-link">u[1]</span> with the value 0: this slot will later hold the result of the prime check.</p>
+                    <pre class="text-code"><code class="clike">
+if(m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) primetest();
+                                        </code></pre>
+
+                    <p class="text">In this part, we want to call the function conducting the prime test. Since we are only interested in primes between 10000 and 20000, we only need to call that function if the value in <span class="p-link">m[0]</span> meets this requirement.</p>
+                    <pre class="text-code">    <code class="clike">
+        
+verify_bty ((m[0]&gt;10000 &amp;&amp; m[0]&lt;20000) &amp;&amp; (u[1]==1));
+                                    
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                    <p class="text">This part actually tells the backend system what to be considered a valid solution to your task-challenge &#x2013; or a &#x201C;bounty&#x201D; how it is called in XEL&#x2019;s terminology. This basically is a <span class="p-link">verify_bty()</span> which takes a boolean expression as an argument which should evaluate to true for every valid solution that you want to have reported back. In this case, it is really straight forward: if the number we have stored in <span class="p-link">m[0]</span> is between 10000 and 20000, and the value in <span class="p-link">m[1]</span> equals 1, then consider this a valid solution.</p>
+                    <p class="text"></p>
+                    <p class="text">In a next step, we need to specify a condition for &#x201C;proof-of-work&#x201D; payments. XEL&#x2019;s Blockchain works in a way, that every task has two types of payments: the proof-of-work payments and the bounty payments. This has a very simple reason: very often, bounties are very hard to find and only limited to a hand full per job. Imagine you want to find an input to a CNF formula that evaluates it to true: if you are having a bijective relation, there will be only one solution which, depending on the complexity of your formula, is very hard to find. While the discovery of such a solution should be awarded an attractive amount of coins (to keep workers motivated) you also want to keep them motivated by frequent, smaller payments. XEL introduces the concept of proof-of-work solutions to achieve that. These are solutions that do not really solve your problem but which can be submitted by the workers to claim a tiny amount of coins as a reward for ongoing commitment. As you can probably imagine, payments per bounty should be set significantly higher than payments per proof-of-work. However, if you set this value too small, other tasks on the network might seem more lucrative and attract the processing power away from you. Proof-of-work packages, by the way, work on top of a re-targeting mechanism comparable to the block difficulty re-target in Bitcoin: The more processing power the network has, the harder it becomes to find such proof-of-work solutions so that, on average, the total number of proof-of-work solutions in the entire network converges to 10 per minute.</p>
+                    <p class="text"><strong>It is important to point out that it is the developer&#x2019;s responsibility to provide the verify_pow() function with enough &#x201C;evidence&#x201D; that the worker has been actually working on your problem in the form of four unsigned integers.</strong></p>
+
+                    <p class="text">In our example here, we use this:</p>
+                    <pre class="text-code"><code class="clike">
+// some randomness for POW function
+u[57] = m[1];
+u[56] = m[2];
+u[55] = m[3];
+u[54] = m[4];
+
+verify_pow (u[57], u[56], u[55], u[54]);
+                                        </code></pre>
+
+                    <p class="text">Now, while it is more than fine for our little demo, it is an example of the worst way to do it for productive use. Here, we just take four integers from our random input entropy and use them to specify the proof-of-work reward condition. In this case, workers who are not really interested in getting the bounty payments but just want to work towards the proof-of-work solutions can basically omit the entire program logic and only check input integers <span class="p-link">m[1] ... m[4]</span> to see if they have found a proof-of-work solution. This gives them a huge advantage over the more honest workers and allows them to get paid without really contributing anything useful to your task. It is always a best practice to use four values which depend &#x201C;somehow&#x201D; on the execution on as most of the program&#x2019;s logic as possible. Then, only people who actually run the entire code can find those bounties. While this still does not guarantee that they will submit any bounty, there is no real reason why they shouldn&#x2019;t since they have already performed all the work required for a bounty check.</p>
+                    <p class="text">In the last step, we are going to take a look at the actual prime check:</p>
+                    <pre class="text-code">    <code class="clike">
+        
+function primetest {
+    u[1] = 0;
+    if (u[2] &lt;= 1)  u[1]=0;
+    else if (u[2] &lt;= 3) u[1]=0;
+    else if (u[2]%2 == 0 || u[2]%3 == 0) u[1]=0;
+    else {
+        u[3]=5;
+        u[1]=1;
+        repeat(u[99],20000,20000){
+        if (u[2]%u[3] == 0 || u[2]%(u[3]+2) == 0)
+        { u[1]=0; break; }
+        if(u[3]*u[3] &gt; u[2]) break;
+            u[3]+=6;
+        }
+    }
+}
+                                        
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                    <p class="text">What you see here is basically a simple trial-division based primality check which works on <span class="p-link">m[2]</span> (we have stored there our prime candidate before) as the input and sets <span class="p-link">m[1] = 1</span> if the candidate actually is a prime number, and <span class="p-link">m[1] = 0</span> otherwise. This value can be considered the &#x201C;return value&#x201D; of our function.</p>
+
+                    <p class="text">One novelty you have probably notices, is the strange loop construct that you have probably never seen before:</p>
+                    <pre class="text-code"><code class="clike">
+repeat(u[99],20000,20000){
+    ...
+}
+                                        </code></pre>
+
+                    <p class="text">Before digging deeper into the characteristics of ePL&#x2019;s loops, we need to take a look what makes loops so evil. Remember, we want to have a programming language where it is known before hand when it will terminate and how much memory it will use to avoid all sorts of DOS attacks where tasks are submitted that never terminate. But why is it so hard to assess this with traditional loops. Well, traditional loops suffer from the so-called halting problem. The halting problem basically is the problem of determining whether a program will terminate or whether it will run forever.</p>
+
+                    <p class="text">While it is possible to do it for a C loop like this</p>
+                    <pre class="text-code"><code class="clike">
+for(int i=0; i&lt;1000: ++i){
+    ...
+}
+                                        </code></pre>
+
+                    <p class="text">it already becomes impossible for simple constructs like this</p>
+                    <pre class="text-code"><code class="clike">
+int entropy = rand();
+for(int i=0; i&lt;1000: ++i){
+    if (entropy &lt; 10000) --i; if (entropy &gt; 50000) ++i;
+    ...
+}
+                                        </code></pre>
+
+                    <p class="text">Here, the termination of the for loop is totally depending on the value of <span class="p-link">entropy</span>. Of course, in this simple example we can see with our own eyes what is going to happen. If <span class="p-link">entropy &lt; 10000</span> then the loop runs forever. If <span class="p-link">10000 &lt;= entropy &lt;= 50000 </span>, then the loop iterates exactly 1000 times, and for <span class="p-link">entropy &gt; 50000</span> only 500 times. For the general case, however, there is no efficient way to algorithmically tell whether a C program will terminate, and when.</p>
+
+                    <p class="text">To eliminate this issue, ePL introduces a loop in the form of:</p>
+                    <pre class="text-code"><code class="clike">
+repeat(index,iterations,max_iterations){
+    ...
+}
+                                        </code></pre>
+
+                    <p class="text">where the index is an array slot, the iterations is an expression which may be constant but which also may be an array slot of your choice, and the max_iterations is a constant value giving a maximum amount of iterations after which the loop exits. Internally, when translated back to C, our loop</p>
+                    <pre class="text-code"><code class="clike">
+repeat(u[99],20000,20000){
+    ...
+}
+                                        </code></pre>
+
+                    <p class="text">The counter variable cannot be changed by the ePL code itself and will count to the maximum iteration count before it causes the loop to exit &#x2013; regardless of what your code does. When parsing your code and checking if your codes complexity is within certain bounds, it will be always assumed that your loop will run for the maximum amount of iterations that you have specified. Make sure to specify a sufficiently large number here, otherwise your loops will exit prematurely.</p>
+                    <p class="text">That is basically it, you have written your first program in ePL. Now, it&#x2019;s time to test it.</p>
+
+
+                  </article>
+                </div>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Compiling and testing</h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">In order to test your program for syntactical correctness, you can use xel_miner. Assuming your program is called find_prime.epl, you can use this command</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>./xel_miner --validate --test-avoidcache --test-vm find_prime.epl</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <p class="text">to do a first run of your code. The <span class="plink">--validate</span> flag tells xel_miner to look for the use of uninitialized variables which are not guaranteed to be zero at all times. You want to avoid that behaviour. Furthermore, programs that do not pass this check will not be accepted on the Blockchain. The --test-vm flags tells xel_miner to not start mining, but to run (and check it for correctness) a local ePL file on your computer.</p>
+                    <p class="text">If everything goes well, you will be presented with an output like this:</p>
+                    <pre class="text-code"><code class="clike">
+** XEL Compute Engine **
+Miner Version: 0.9.6
+ElasticPL Version: 0.9.4
+[16:31:29] DEBUG: Skipping recompilation to be blazing fast
+[16:31:29] DEBUG: TestVM: block id &apos;123456789&apos;
+[16:31:29] DEBUG: TestVM: work id &apos;987654321&apos;
+[16:31:29] DEBUG: WCET main tester status: OFF
+[16:31:29] DEBUG: WCET verify tester status: OFF
+[16:31:29] DEBUG: TestVM: multiplicator &apos;0000......0000&apos;
+[16:31:29] DEBUG: TestVM: pubkey &apos;0000......0000&apos;
+[16:31:29] DEBUG: TestVM: target &apos;0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF&apos;
+[16:31:29] DEBUG: storage size: 0
+[16:31:29] DEBUG: Library &apos;job_987654321&apos; Loaded
+[16:31:29] DEBUG: Bounty Found: false
+[16:31:29] DEBUG: POW Found: false
+[16:31:29] DEBUG: POW Hash: 4E95CBA872172C0596BE7CB482703EE4
+[16:31:29] DEBUG: Compiler Test Complete
+[16:31:29] Exiting xel_miner
+[16:31:29] Cleaning up
+                                    </code></pre>
+
+                    <p class="text">If everything went well, and you didn&#x2019;t receive any compilation errors, it means that your code is syntactically correct &#x2013; does not yet tell us much about whether it is doing what you want to do; this is something we will test later.</p>
+                    <p class="text">But first of all, you might be interested in how your program looks like when compiled into C. You can take a look by running</p>
+                    <pre class="text-code">    <code class="clike">
+        
+cat work/job_987654321.h
+                                    
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                  </article>
+                </div>
+                <p class="text">and you will see something like this:</p>
+                <pre class="text-code"><code class="clike">
+void main_987654321(uint32_t *, uint32_t, uint32_t *, uint32_t *, uint32_t *);
+void primetest_987654321();
+void verify_987654321(uint32_t *, uint32_t, uint32_t *, uint32_t *, uint32_t *);
+
+void main_987654321(uint32_t *bounty_found, uint32_t verify_pow, uint32_t *pow_found, uint32_t *target, uint32_t *hash) {
+    verify_987654321(bounty_found, verify_pow, pow_found, target, hash);
+}
+
+void primetest_987654321() {
+    u[1] = 0;
+    if ((u[2]) &lt;= (1)) {
+        u[1] = 0;
+    }
+    else {
+        if ((u[2]) &lt;= (3)) {
+            u[1] = 0;
+        }
+        else {
+            if ((((((2) != 0) ? (u[2]) % (2) : 0)) == (0)) || (((((3) != 0) ? (u[2]) % (3) : 0)) == (0))) {
+                u[1] = 0;
+            }
+            else {
+                u[3] = 5;
+                u[1] = 1;
+                int loop87;
+                for (loop87 = 0; loop87 &lt; (20000); loop87++) { if (loop87 &gt;= 20000) break;
+                    u[99] = loop87;
+                    if ((((((u[3]) != 0) ? (u[2]) % (u[3]) : 0)) == (0)) || ((((((u[3]) + (2)) != 0) ? (u[2]) % ((u[3]) + (2)) : 0)) == (0))) {
+                        u[1] = 0;
+                        break;
+                    }
+                    if (((u[3]) * (u[3])) &gt; (u[2])) {
+                        break;
+                    }
+                    u[3] += 6;
+                }
+            }
+        }
+    }
+}
+
+void verify_987654321(uint32_t *bounty_found, uint32_t verify_pow, uint32_t *pow_found, uint32_t *target, uint32_t *hash) {
+    u[2] = m[0];
+    u[1] = 0;
+    if (((m[0]) &gt; (10000)) &amp;&amp; ((m[0]) &lt; (20000))) { primetest_987654321(); } *bounty_found = (uint32_t)((((m[0]) &gt; (10000)) &amp;&amp; ((m[0]) &lt; (20000))) &amp;&amp; ((u[1]) == (1)) != 0 ? 1 : 0);
+    u[57] = m[1];
+    u[56] = m[2];
+    u[55] = m[3];
+    u[54] = m[4];
+    if (verify_pow == 1)
+        *pow_found = check_pow(u[57],u[56],u[55],u[54], &amp;m[0], &amp;target[0], &amp;hash[0]);
+    else
+        *pow_found = 0;
+}
+                                    </code></pre>
+
+                <p class="text">We won&#x2019;t go into detail and go through every line of it. Rather, we wanted to show you how you can actually compile your ePL program into C in order to understand how your ePL will be translated in the end and help you debug problems that you might face during development. For now, we have just verified that your code is syntactically correct but not if it produces the correct results.</p>
+                <p class="text">You can try a test-mining run by calling xel_miner like this (important: always use &#x2013;test-avoidcache to disable caching, this may cause problems during testing)</p>
+                <pre class="text-code">    <code class="clike">
+        
+./xel_miner --test-avoidcache --test-cont-bounty --test-vm prime.epl
+                                
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                <p class="text">depending on the complexity of your problem, you will need to wait some time until you get your first result. For testing purpose, it might be wise to lessen the requirements inside your <span class="p-link">verify_bty(...)</span> call during your local testing activities to get your result quicker. In our case, the result should be displayed very quickly:</p>
+                <pre class="text-code"><code class="clike">
+                                    ** XEL Compute Engine **
+    Miner Version: 0.9.6
+    ElasticPL Version: 0.9.4
+[20:08:09] DEBUG: Skipping recompilation to be blazing fast
+[20:08:09] DEBUG: TestVM: block id &apos;123456789&apos;
+[20:08:09] DEBUG: TestVM: work id &apos;987654321&apos;
+[20:08:09] DEBUG: WCET main tester status: OFF
+[20:08:09] DEBUG: WCET verify tester status: OFF
+[20:08:09] DEBUG: TestVM: multiplicator &apos;0000....0000&apos;
+[20:08:09] DEBUG: TestVM: pubkey &apos;0000....0000&apos;
+[20:08:09] DEBUG: TestVM: target &apos;0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF&apos;
+[20:08:09] DEBUG: storage size: 0
+[20:08:09] DEBUG: Library &apos;job_987654321&apos; Loaded
+[20:08:09] &gt;&gt; STARTING CONTINUOUS TEST, THIS MAY TAKE VERY LONG DEPENDING ON YOUR PROBLEM &lt;&lt;
+[20:08:17] ran 5000000 iterations, still working ...
+[20:08:18] ********************************
+[20:08:18] FOUND A SOLUTION TO YOUR PROBLEM
+[20:08:18]  we will dump all 12 input ints
+[20:08:18] ********************************
+[20:08:18] m[0]	=	18503
+[20:08:18] m[1]	=	3294169169
+[20:08:18] m[2]	=	2082860469
+[20:08:18] m[3]	=	2676999779
+[20:08:18] m[4]	=	18503
+[20:08:18] m[5]	=	3095193060
+[20:08:18] m[6]	=	3819580374
+[20:08:18] m[7]	=	2676985380
+[20:08:18] m[8]	=	3095178659
+[20:08:18] m[9]	=	670245767
+[20:08:18] m[10]	=	0
+[20:08:18] m[11]	=	1
+[20:08:18] DEBUG: Bounty Found: true
+[20:08:18] DEBUG: POW Found: false
+[20:08:18] DEBUG: POW Hash: 6F71E050C9A3B5A4B8A5686CB47EB17E
+[20:08:18] DEBUG: Compiler Test Complete
+[20:08:18] Exiting xel_miner
+[20:08:18] Cleaning up
+                                    </code></pre>
+
+                <p class="text">From this line here</p>
+                <pre class="text-code"><code class="clike">
+[20:08:18] DEBUG: Bounty Found: true
+                                    </code></pre>
+
+                <p class="text">you can see, that indeed a bounty has been found. And since we have used a very simple way to define solution candidates, you can see the result right away:</p>
+                <pre class="text-code"><code class="clike">
+[20:08:18] m[0]	=	18503
+                                    </code></pre>
+
+                <p class="text">Indeed, it is a prime number between 10000 and 20000.</p>
+                <p class="text">Are you ready to push your first ePL program to the Blockchain?</p>
+
+              </div>
+
+
+
+            </div>
+            <div class="document" id="doc3">
+              <div class="doc-title">3. ePL Submitting Tasks</div>
+              <p class="doc-text">There is a fully detailed guide on submitting tasks in XELINE Wallet tutorial. You can reference it <a class="p-link" target="_blank" href="http://docs.xel.org/submit-task.html">here</a>. </p>
+            </div>
+            <div class="document" id="doc4">
+              <div class="doc-title">4. ePL Advanced Tactics</div>
+              <p class="doc-text">In this step we will finally take a look at how storage and iterations work in ePL. Before you do so, we strongly recommend that you read and understand the previous steps of the guide and understand the XELINE Wallet guide, as we referenced in the last step. </p>
+              <div class="installation-section">
+                <h2 class="title">Issues with our example</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title"></h3>
+
+                    <p class="text">Our original example was capable of finding prime numbers between 10000 and 20000. However, there was no way so far on re-using results that have been submitted by other nodes in order to improve on them. This behaviour is necessary in many cases (eg. for genetic algorithms). Genetic algorithms typically use heuristics similar to natural-evolution processes like selection and mutation. Candidate solutions to problems that have large search space are then evolved over multiple generations (or iterations, as we would call them). In each generation the good results of the previous generation are taken and improved causing the algorithm to converge towards some optimum.</p>
+                    <p class="text">This requires for some kind of storage and synchronisation between consecutive iterations-generations. We will try to keep things simple in this guide for a better understanding. In this guide we want to extend our prime finding example for it to be able to find multiple primes over multiple iterations, with each prime being smaller than the prime found in the prior iteration.</p>
+                    <p class="text">In order to do so, we adjust our example to look like this:</p>
+
+                    <pre class="text-code">    <code class="clike">
+        
+// metadata(title:My personal PRIME demo)
+// metadata(pow_limit:1000)
+// metadata(pow_price:0.2)
+// metadata(bounty_limit:1)
+// metadata(bounty_price:5)
+// metadata(iterations:3)
+// metadata(timeout:250)
+// metadata(callback:my_own_prime_demo_callback.js)
+
+array_uint 1000;
+
+submit_sz 1;
+submit_idx 100;
+
+function main { verify();} 
+function primetest {
+    u[1] = 0;
+    if (u[2] &lt;= 1)  u[1]=0;
+    else if (u[2] &lt;= 3) u[1]=0;
+    else if (u[2]%2 == 0 || u[2]%3 == 0) u[1]=0;
+    else { 
+        u[3]=5; u[1]=1;
+        repeat(u[99],20000,20000){
+            if (u[2]%u[3] == 0 || u[2]%(u[3]+2) == 0){ u[1]=0; break; }
+            if(u[3]*u[3] &gt; u[2]) break;
+                    u[3]+=6;
+        }
+    }
+}
+
+function verify {
+
+    // make prime test
+    u[2] = m[0];
+    u[1]=0;
+
+    // take over a possible prime stored in s[] storage_idx
+    u[4]=s[0];
+    u[100]=u[2];
+
+
+    if(m[0]&gt;10000 &amp;&amp; m[0]&lt;20000 &amp;&amp; (u[4]==0 || m[0]<u[4])) 3294967295="" primetest();="" bounty="" is="" rewarded="" m[0]="" larger="" than="" and="" prime="" verify_bty="" ((m[0]="">10000 &amp;&amp; m[0]&lt;20000) &amp;&amp; (u[1]==1));
+
+    // some randomness for POW function
+    u[57] = m[1];
+    u[56] = m[2];
+    u[55] = m[3];
+    u[54] = m[4];
+
+    verify_pow (u[57], u[56], u[55], u[54]);
+}
+                                </u[4]))>
+    </code>
+    <span class="far fa-clone copy-code" data-clipboard-target=".clike"></span>
+</pre>
+
+                    <div class="installation-paragraph">
+                      <p class="text">Now, let&#x2019;s quickly go through the differences:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>// metadata(iterations:3)</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <div class="installation-paragraph">
+                      <p class="text">This line tells XELINE that we now want three iterations instead of one. The number of solutions (per iterations), in this example, has been left at one. </p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>submit_sz 1;</p>
+                          <p>submit_idx 100;</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <p class="text">These lines describe that we want a storage size of 1 unsigned integer. When a solution is being found, we want the miner to upload <span class="p-link">submit_sz</span> amount of unsigned integers beginning at <span class="p-link">u[submit_idx] = u[100]</span>.</p>
+                    <p class="text"></p>
+
+                    <div class="installation-paragraph">
+                      <p class="text">In</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>// take over a possible prime stored in s[] storage_idx</p>
+                          <p>u[4]=s[0];</p>
+                          <p>u[100]=u[2]; // prepare the slot for upload</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <p class="text">we initialize a free slot in the u-array <span class="p-link">u[4]</span> with the first and only storage value <span class="p-link">s[0]</span>. Now this may sound confusing, so once again. When solutions are found, the miner software submits submit_szunsigned integers starting from <span class="p-link">u[submit_idx]</span>. When other miners receive work, that earlier submitted storage is stored in an array called <span class="p-link">s[]</span> which also has the size of <span class="p-link">submit_sz</span>. In our case, this means that the value at <span class="p-link">u[100]</span> (which is initialized with the prime in the code snipped above) is submitted with every solution, and down streamed into <span class="p-link">s[0]</span> in consecutive iterations. If you have multiple solutions per iteration configured, a random one of those is going to be put into <span class="p-link">s[0]</span>. This, however, is not the case for this simple demo.</p>
+
+                    <div class="installation-paragraph">
+                      <p class="text">These lines here were also modified:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>if(m[0]&gt;10000 &amp;&amp; m[0]&lt;20000 &amp;&amp; (u[4]==0 || m[0]&lt;u[4])) primetest();</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <p class="text">On the first iteration, the storage is filled with zero values, on consecutive iterations the storage has the value of the previous iteration. What these two lines basically do is to only run the prime test in case there is not storage yet, or if the prime number in question is smaller than the one submitted to the storage in the previous iteration.</p>
+
+                    <div class="installation-paragraph">
+                      <p class="text">Now, the only thing we have to do, is account for it inside our callback. Since we have three bounties in total, we can just iterate over the first dimension in the bounties array (as described in one of the earlier tutorials):</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>var txt = (bounties[2][0]&gt;&gt;&gt;0)+&quot;, &quot; +(bounties[1][0]&gt;&gt;&gt;0);</p>
+                          <p>txt += &quot;, &quot; + (bounties[0][0]&gt;&gt;&gt;0);</p>
+                          <p>console.log(&quot;Second demo (three primes): &quot; + txt);</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <p class="text">You see that three primes have been found and, by using storage and iterations, every prime number is smaller its predecessor. With the knowledge you have got so far, you can now start programming fancy, multi-iteration tasks for XEL. </p>
+
+                  </article>
+                </div>
+
+              </div>
+            </div>
+            <div class="document" id="doc5">
+              <div class="doc-title">5. Support</div>
+              <p class="doc-text">If you encounter any difficulty while submitting your task to the blockchain you can always read more information on the <a href="https://wiki.xel.org/" class="p-link">official XEL wiki</a> or seek assistance from our <a href="" class="p-link">community</a>.</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- <cb:comp cb:type="footer"></cb:comp> -->
+        <div id="snackbar">Code copied!</div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

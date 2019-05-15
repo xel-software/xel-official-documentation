@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> xel Docs | Provide power</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="It&#x2019;s time to start mining and providing power. Before you do so, we strongly recommend that you read and understand the guide found here.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:site_name" content="xel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="xel Docs | Provide power">
+    <meta property="og:description" content="It&#x2019;s time to start mining and providing power. Before you do so, we strongly recommend that you read and understand the guide found here.">
+    <meta property="og:url" content="https://docs.xel.org/give-power.html">
+    <meta property="og:image" content="https://docs.xel.org/assets/images/facebook.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="xel Docs | Provide power">
+    <meta name="twitter:description" content="It&#x2019;s time to start mining and providing power. Before you do so, we strongly recommend that you read and understand the guide found here.">
+    <meta name="twitter:url" content="https://docs.xel.org/give-power.html">
+    <meta name="twitter:image" content="https://docs.xel.org/assets/images/twitter.png">
+
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+
+  </head>
+
+  <body id="doc-body">
+    <script type="text/javascript" src="dependencies/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="dependencies/clipboard/clipboard.min.js"></script>
+    <script type="text/javascript" src="dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/docs.js"></script>
+    <script type="text/javascript" src="dependencies/prismjs/prism.js"></script>
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="dependencies/prismjs/prism.css">
+    <link rel="stylesheet" href="assets/css/xeldocs.style.css" data-autorefresh="true">
+
+
+
+    <div class="power-page">
+      <div class="docspage">
+        <div class="navbar1 nav-desktop content-container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="nav_black_logo" src="assets/images/xel_black.svg" alt="Xel logo">
+              <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+              <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars open-toggle"></span>
+              <span class="fas fa-times close-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <div class="nav-container">
+                  <div class="navlinks" id="navfordocs">
+                    <li class="nav-item">
+                      <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://xel.org/">xel homepage</a>
+                    </li>
+                  </div>
+                  <div class="dropdown-mobile navsocials">
+                    <div class="line"></div>
+                    <div class="socials-mobile">
+                      <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                        <img src="assets/images/discord.svg" alt="">
+                      </a>
+                      <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                        <img src="assets/images/reddit.svg" alt="">
+                      </a>
+                      <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                        <img src="assets/images/twitter.svg" alt="">
+                      </a>
+                      <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                        <img src="assets/images/btc.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="navbar1 nav-mobile content-container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="nav_black_logo" src="assets/images/xel_white.svg" alt="Xel logo">
+              <img id="exp_black_logo" src="assets/images/xel_black.svg" alt="Xel logo"><span id="nav-xel">xel</span>
+              <div id="xeldocs"><span id="xeldocs1">xel</span><span id="xeldocs2">Docs</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars open-toggle"></span>
+              <span class="fas fa-times close-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <div class="nav-container">
+                  <div class="navlinks" id="navfordocs">
+                    <li class="nav-item">
+                      <a class="nav-link" id="navtask" href="submit-task.html">submit your task</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navpower" href="give-power.html">provide power</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="navepl" href="learn-epl.html">learn epl</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://xel.org/">xel homepage</a>
+                    </li>
+                  </div>
+                  <div class="dropdown-mobile navsocials">
+                    <div class="line"></div>
+                    <div class="socials-mobile">
+                      <a class="social discord" href="https://link.xel.org/discord" target="_blank">
+                        <img src="assets/images/discord.svg" alt="">
+                      </a>
+                      <a class="social reddit" href="https://link.xel.org/reddit" target="_blank">
+                        <img src="assets/images/reddit.svg" alt="">
+                      </a>
+                      <a class="social twitter" href="https://link.xel.org/twitter" target="_blank">
+                        <img src="assets/images/twitter.svg" alt="">
+                      </a>
+                      <a class="social btctalk" href="https://link.xel.org/bitcointalk" target="_blank">
+                        <img src="assets/images/btc.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="sidebardocs content-container" id="timeline">
+
+            <ul class="timeline-desktop" role="tablist">
+              <li>
+                <a id="tm1" class="tm1 show" href="#">1. Overview</a>
+              </li>
+              <li>
+                <a id="tm2" class="tm2" href="#">2. Installing XEL Miner</a>
+              </li>
+              <li>
+                <a id="tm3" class="tm3" href="#">3. Launching XEL Miner</a>
+              </li>
+              <li>
+                <a id="tm4" class="tm4" href="#">4. Support</a>
+              </li>
+            </ul>
+            <div class="sdbr-mobile content-container">
+              <ul class="timeline-mobile" id="timeline">
+                <li class="tm1 show" id="tm1">
+                  <a href="#">1</a>
+                </li>
+                <li class="tm2" id="tm2">
+                  <a href="#">2</a>
+                </li>
+                <li class="tm3" id="tm3">
+                  <a href="#">3</a>
+                </li>
+                <li class="tm4" id="tm4">
+                  <a href="#">4</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div id="docs" class="docs-content">
+
+            <div class="document" id="doc1">
+              <div class="doc-title">1. Overview</div>
+              <p class="doc-text">It is time to start mining. Before you do so, we strongly recommend that you read and understand the guide found here. </p>
+
+              <div class="installation-section">
+                <h2 class="title">What you will need to do</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Install XEL Miner</h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">In order to start mining you will need to install XEL Miner. This tool interacts with the XELINE command center, and serves the purpose of solving uploaded work tasks, also known as POW (Proof of Work). By doing so, you will be rewarded with XEL tokens for providing your CPU and GPU computational resources. </p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                  </article>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="document" id="doc2">
+              <div class="doc-title">2. Installing XEL Miner</div>
+              <p class="doc-text">Despite what the name might suggest, XEL Miner is more than just a miner. It is a fully fledged ePL to C conversion and compilation tool that helps you to convert ePL programs into C, to compile them into executable machine code, and natively execute ePL programs on your local machine.</p>
+              <div>
+                <div class="installation-section">
+                  <h2 class="title">Windows</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Run XEL Miner from sources</h3>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Cloning and build</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone --depth 1 https://github.com/xel-software/xel-miner</p>
+                            <p>cd xel-miner</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">If you don&apos;t want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake .</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">If you want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake . -USE_OPENCL</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">Using CPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">Using GPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D --opencl</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">Use ./xel_miner -h to see a full list of options.</p>
+                        <div id="code" class="code-wrapper hide">
+                          <div class="code">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                </div>
+
+                <div class="installation-section">
+                  <h2 class="title">Run XEL Miner from docker installer</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Requirements</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone https://github.com/xel-software/xel-installer-docker</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <p class="text">or</p>
+                      <p class="text">You will need to download <a class="p-link" href="https://github.com/xel-software/xel-installer-docker/archive/master.zip">this project</a> and extract it</p>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You can start the XEL Miner using</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>$ bash xel-miner.sh start</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                </div>
+
+              </div>
+              <div>
+                <div class="installation-section">
+                  <h2 class="title">MacOS</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Run XEL Miner from sources</h3>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Requirements</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install homebrew ( if not already installed )</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">Then proceed with the installation</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>brew install gmp make cmake openssl</p>
+                            <p>ln -s /usr/local/opt/openssl/include/openssl /usr/local/include/openssl</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Cloning and build</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone --depth 1 https://github.com/xel-software/xel-miner</p>
+                            <p>cd xel-miner</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                      <div class="installation-paragraph">
+                        <p class="text">If you don&apos;t want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake .</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                      <div class="installation-paragraph">
+                        <p class="text">If you want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake . -USE_OPENCL</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">Using CPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                      <div class="installation-paragraph">
+                        <p class="text">Using GPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D --opencl</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                      <div class="installation-paragraph">
+                        <p class="text">Use ./xel_miner -h to see a full list of options.</p>
+                        <div id="code" class="code-wrapper hide">
+                          <div class="code">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                </div>
+                <div class="installation-section">
+                  <h2 class="title">Run XEL Miner from docker installer</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Requirements</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone https://github.com/xel-software/xel-installer-docker</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <p class="text">or</p>
+                      <p class="text">You will need to download <a class="p-link" href="https://github.com/xel-software/xel-installer-docker/archive/master.zip">this project</a> and extract it</p>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You can start the XEL Miner using</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>$ bash xel-miner.sh start</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                </div>
+
+              </div>
+              <div>
+                <div class="installation-section">
+                  <h2 class="title">Linux</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Run XEL Miner from sources</h3>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Requirements</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text"></p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>apt-get update</p>
+                            <p>apt-get install -y cmake libcurl4-openssl-dev libudev-dev screen libtool pkg-config libjansson-dev libssl-dev</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Cloning and build</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository </p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone --depth 1 https://github.com/xel-software/xel-miner</p>
+                            <p>cd xel-miner</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">If you don&apos;t want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake .</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">If you want to use OpenCL</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>cmake . -USE_OPENCL</p>
+                            <p>make install</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">Using CPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">Using GPU</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>./xel_miner -t &lt;num_threads&gt; -P &lt;secret_phrase&gt; -D --opencl</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <div class="installation-paragraph">
+                        <p class="text">Use ./xel_miner -h to see a full list of options.</p>
+                        <div id="code" class="code-wrapper hide">
+                          <div class="code">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+                </div>
+
+                <div class="installation-section">
+                  <h2 class="title">Run XEL Miner from docker installer</h2>
+
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Requirements</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You will need to install git and clone the repository</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>git clone https://github.com/xel-software/xel-installer-docker</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+                      <p class="text">or</p>
+                      <p class="text">You will need to download <a class="p-link" href="https://github.com/xel-software/xel-installer-docker/archive/master.zip">this project</a> and extract it</p>
+
+                    </article>
+                  </div>
+                  <div class="installation-article">
+                    <article>
+                      <h3 class="article-title">Launch</h3>
+
+                      <div class="installation-paragraph">
+                        <p class="text">You can start the XEL Miner using</p>
+                        <div id="code" class="code-wrapper ">
+                          <div class="code">
+                            <p>$ bash xel-miner.sh start</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                          <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="document" id="doc3">
+              <div class="doc-title">3. Launching XEL Miner</div>
+              <p class="doc-text">Now that you have installed XEL Miner, it&#x2019;s time to start using it. Before launching the miner, its a good start to familiarize yourself with the help information</p>
+
+              <div class="installation-section">
+                <h2 class="title">Windows</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Using XEL Miner</h3>
+
+                  </article>
+                </div>
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Reviewing the help information</h3>
+
+                  </article>
+                </div>
+                <div class="installation-paragraph">
+                  <p class="text">Once you are in the directory where your xel_miner executable is, take a look at the help</p>
+                  <div id="code" class="code-wrapper ">
+                    <div class="code">
+                      <p>xel_miner.exe --help</p>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="installation-section">
+                <h2 class="title">MacOS and Linux</h2>
+
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Using XEL Miner</h3>
+
+                  </article>
+                </div>
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title">Reviewing the help information</h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">Once you are in the directory where your xel_miner executable is, take a look at the help</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>./xel_miner --help</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <div class="installation-paragraph">
+                      <p class="text">In the remainder of this tutorial, we will just cover the Linux and MacOS variant but the Windows one should be always analogous to that. After you have launched that command you will see the help</p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <pre class="text-code"><code class="clike"> 
+** XEL Compute Engine **
+Miner Version: 0.9.6
+ElasticPL Version: 0.9.4
+Usage: xel_miner [OPTIONS]
+Options:
+-c, --config          Use JSON-formated configuration file
+    --deadswitch   Hardkill the instance after x seconds
+-D, --debug                 Display debug output
+    --debug-epl             Display EPL source code
+-d, --delaysleep	     	  Sleep x seconds after submitting POW: useful for burstless debugging
+-i, --ignoremask			  Debug only: ignore 0=nothing, 1=PoW, 2=Bty, 3=Both
+-h, --help                 Display this help text and exit
+-m, --mining PREF[:ID]      Mining preference for choosing work
+                                profit       (Default) Estimate most profitable based on POW Reward / WCET
+                                wcet         Fewest cycles required by work item
+                                workid		 Specify work ID
+    --no-color              Don&apos;t display colored output
+    --opencl	              Run VM using compiled OpenCL code
+    --opencl-gthreads    Max Num of Global Threads (256 - 10240, default: 1024)
+    --opencl-vwidth 	  Vector width of local work size (1 - 256, default: calculated)
+-o, --url=URL               URL of mining server
+-p, --pass        Password for mining server
+-P, --phrase    Secret Passphrase for XEL account
+    --protocol              Display dump of protocol-level activities
+-q, --quiet                 Display minimal output
+-r, --retries            Number of times to retry if a network call fails
+                            (Default: Retry indefinitely)
+-R, --retry-pause        Time to pause between retries (Default: 10 sec)
+-s, --scan-time          Max time to scan work before requesting new work (Default: 60 sec)
+        --test-miner      Run the Miner using JSON formatted work in
+    --test-vm         Run the Parser / Compiler using the XEL ePL source code in
+    --test-avoidcache   	  Do not save metadata
+    --test-block 	  Block-id for test run
+    --test-cont-bounty      Search for bounties within test-vm environment
+    --test-cont-pow         Search for proof-of-work within test-vm environment
+    --test-work 	  Work-id for test run
+    --test-limit-storage 			Only allow storage sizes up to
+    --test-multiplicator &lt;32-byte-hex&gt;	Multiplicator for testrun: must be exactly 32 hex chars
+    --test-publickey &lt;32-byte-hex&gt;		Publickey for testrun: must be exactly 32 hex chars
+    --test-stdin		                    Read storage values from stdin
+    --test-target &lt;16-byte-hex&gt;		    Target for test run: must be exactly 16 hex chars
+    --test-wcet-main 		Do not ignore WCET limits of main function in Test-Vm run
+    --test-wcet-verify 	Do not ignore WCET limits of verify function in Test-Vm run
+-t, --threads            Number of miner threads (Default: Number of CPUs)
+-u, --user        Username for mining server
+-T, --timeout            Timeout for rpc calls (Default: 30 sec)
+    --validate              Validate logic in &apos;main&apos; &amp; &apos;verify&apos; functions
+    --verify-only           Use verify instead of main
+-v, --version               Display version information and exit
+-X  --no-renice             Do not lower the priority of miner threads
+Options while mining ----------------------------------------------------------
+
+s +                 Display mining summary
+d +                 Toggle Debug mode
+q +                 Toggle Quite mode
+                                    </code></pre>
+
+                  </article>
+                </div>
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title"></h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">We will not cover all options in this tutorial, only those which are required to get your miner ready to work on tasks on the XEL Blockchain. First of all, we want to take a look at the threads configuration parameter</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>t, --threads Number of miner threads (Default: Number of CPUs)</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                    <div class="installation-paragraph">
+                      <p class="text">This parameter allows you to configure how many threads you want xel_miner to run on. The more threads you use, the faster xel_miner will find solutions. However, if you set this number too high your system may become unresponsive.
+
+                        The next parameter we want to look at is the url configuration:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>-o, --url=URL URL of mining server</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <p class="text">This allows you to point the miner to either a remote node or a local node. Either way is fine, but keep in mind that remote URLs do leak your private key to the server at the moment. If you do not trust the remote node, stick to a local one instead. The URL is always given in the form of <span class="p-link">http://hostname:port</span> where <span class="p-link">hostname</span> is the IP or FQDN of the host, and <span class="p-link">port</span> is either <span class="p-link">17876</span> for the mainnet or <span class="p-link">16876</span> for the testnet.</p>
+
+                  </article>
+                </div>
+                <div class="installation-article">
+                  <article>
+                    <h3 class="article-title"></h3>
+
+                    <div class="installation-paragraph">
+                      <p class="text">The third important parameter is the passphrase flag:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>-P, --phrase Secret Passphrase for XEL account</p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <p>
+                      <strong>This is absolutely essential.</strong><br>
+                      This is the passphrase to the account which will both pay the transactions fees for submitting work results and receive the rewards in exchange. if your passphrase has a space in it, make sure to put double quotes around it.<br>
+                      <strong>It is absolutely essential that you have some initial funds inside this account, otherwise you will not be able to submit any solutions.</strong><br>
+                      For testing purposes you can just use your 12 word Xeline mnemonic code (enclosed in double quotes) since it&#x2019;s very easy to get some XEL from the faucet to get started.
+                    </p>
+
+                    <div class="installation-paragraph">
+                      <p class="text">Now, for this tutorial, we want to launch a miner running just one thread, mining via our local node on the testnet. Hence, we start it like this:</p>
+                      <div id="code" class="code-wrapper ">
+                        <div class="code">
+                          <p>./xel_miner -t 1 -o http://localhost:16876 -P </p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+                    <div class="installation-paragraph">
+                      <p class="text">At this point, your miner is already solving proof-of-work packages and submitting bounties - solutions to algorithms for which it has found solutions.</p>
+                      <div id="code" class="code-wrapper hide">
+                        <div class="code">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <span class="far fa-clone copy" data-clipboard-target=".code"></span>
+                      </div>
+                    </div>
+
+                  </article>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="document" id="doc4">
+              <div class="doc-title">4. Support</div>
+              <p class="doc-text">If you encounter any difficulty while submitting your task to the blockchain you can always read more information on the <a href="https://wiki.xel.org/" target="_blank" class="p-link">official XEL wiki</a> or seek assistance from our <a href="https://link.xel.org/discord" target="_blank" class="p-link">community</a>.</p>
+            </div>
+
+          </div>
+        </div>
+        <div id="snackbar">Code copied!</div>
+        <!-- <cb:comp cb:type="footer"></cb:comp> -->
+      </div>
+    </div>
+
+  </body>
+
+</html>
